@@ -4,7 +4,7 @@ const goodbye = (name) => {
   return 'S pozdravem ' + name;
 };
 
-const formalGodbye = (name) => {
+const formalGoodbye = (name) => {
   return 'S uctivou poklonou' + name;
 };
 
@@ -22,3 +22,10 @@ const fillBody = (body, name, goodbyeFunction) => {
   const closingElm = document.querySelector('.email__closing');
   closingElm.textContent = goodbyeFunction(name);
 };
+
+// fillSubject('Obchodní sdělení');
+// fillBody(
+//   'Kupte mycí prostředek, který vám vytře zrak, se slevou 50 %.',
+//   'Jan Čistý',
+//   formalGoodbye
+// );
